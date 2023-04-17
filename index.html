@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="users">
+            <ul id="list-users" class="list-users"></ul>
+        </div>
+        <div class="edit-modal hide">
+            <button class="btn-close" onclick="closeModal()">X</button>
+            <div class="modal-image">
+                <img src="https://reqres.in/img/faces/8-image.jpg" alt="user">
+            </div>
+            <div class="modal-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                <button id="submit">Salvar</button>
+            </div>   
+        </div>
+        <div class="modal-delete hide">
+            <button class="btn-close-delete" onclick="closeModalDelete()">X</button>
+            <p>Usuaário deletado com suecesso!</p>
+            <span>(Você ainda o verá, pois se trata de uma API Fake)</span>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
